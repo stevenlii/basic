@@ -1,8 +1,14 @@
 package com.paymoon.hash$eqs;
 
 import java.util.HashMap;
-
-public class HashMap$PutGet<K,V> extends HashMap<K, V>{
+/**
+ * JDK 1.7
+ * @author yol
+ *
+ * @param <K>
+ * @param <V>
+ */
+public class HashMap$PutGet_JDK7<K,V> extends HashMap<K, V>{
 	/**
 	 * haspmap jdk7.0的put方法
 	 * 主要逻辑
