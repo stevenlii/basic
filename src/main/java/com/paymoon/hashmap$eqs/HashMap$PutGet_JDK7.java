@@ -1,4 +1,4 @@
-package com.paymoon.hashmap$eqs.copy;
+package com.paymoon.hashmap$eqs;
 
 import java.util.HashMap;
 /**
