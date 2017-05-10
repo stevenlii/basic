@@ -50,3 +50,10 @@ Java采用了哈希表的原理。哈希算法也称为散列算法，是将数�
  
  i1.intValue()==i2与i1.intValue()==i2.intValue() 相同会转化
  
+ 总结：
+ 调用==或者eqs的时候，会先调用hashcode是否相等，然后再调用eqs方法，判断对象相等
+ 所以：两个相等对象的equals方法一定为true, 但两个hashcode相等的对象不一定是相等的对象
+ 应用：set/hashmap/Integer对象等比较
+ hashcode是存的对象的物理地址，hash相同，代表两个对象在同一个地址上，但是同一个地址上又分链表，是否是链表的同一个对象，需要使用eqs方法来判断
+ 用hash是因为jvm取对象性能好
+ 
