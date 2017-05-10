@@ -1,4 +1,4 @@
-package com.paymoon.hash$eqs;
+package com.paymoon.hashmap$eqs.copy;
 public class SourceCode$bitwise{
 	//涉及的知识点，位与运算，
 	//Java 位运算(移位、位与、或、异或、非） - Ely's Blog - 博客频道 - CSDN.NET
