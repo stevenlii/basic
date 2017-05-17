@@ -39,6 +39,7 @@ public class Proxy {
         String srcCode =   
             "package com.tgb.proxy;" +  rt +  
             "import java.lang.reflect.Method;" + rt +  
+            "//动态生成的代理类" +  rt +  
             "public class $Proxy1 implements " + infce.getName() + "{" + rt +  
             "    public $Proxy1(InvocationHandler h) {" + rt +  
             "        this.h = h;" + rt +  
@@ -47,7 +48,7 @@ public class Proxy {
             methodStr + rt +  
             "}";  
         String fileName =   
-        		System.getProperty("user.dir")+"/src/main/java/com/tgb/proxy/$Proxy1.java";  
+        		System.getProperty("user.dir")+"/src/aop/spring/com/tgb/proxy/$Proxy1.java";  
         File f = new File(fileName);  
         FileWriter fw = new FileWriter(f);  
         fw.write(srcCode);  
@@ -63,7 +64,7 @@ public class Proxy {
         fileMgr.close();  
 
         //加载到内存，并实例化  
-        URL[] urls = new URL[] {new URL("file:" + System.getProperty("user.dir")+"/src/main/java/")};  
+        URL[] urls = new URL[] {new URL("file:" + System.getProperty("user.dir")+"/src/aop/spring/")};  
         URLClassLoader ul = new URLClassLoader(urls);  
         Class c = ul.loadClass("com.tgb.proxy.$Proxy1");  
 

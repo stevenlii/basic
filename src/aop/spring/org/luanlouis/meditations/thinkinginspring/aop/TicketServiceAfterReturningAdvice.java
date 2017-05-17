@@ -2,7 +2,8 @@ package org.luanlouis.meditations.thinkinginspring.aop;
   
 import org.springframework.aop.AfterReturningAdvice;  
   
-import java.lang.reflect.Method;  
+import java.lang.reflect.Method;
+import java.util.HashMap;  
   
 /** 
  * 返回结果时后的处理意见 

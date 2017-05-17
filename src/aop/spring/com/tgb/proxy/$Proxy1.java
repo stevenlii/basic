@@ -1,5 +1,6 @@
 package com.tgb.proxy;
 import java.lang.reflect.Method;
+//动态生成的代理类
 public class $Proxy1 implements com.tgb.proxy.UserMgr{
     public $Proxy1(InvocationHandler h) {
         this.h = h;
